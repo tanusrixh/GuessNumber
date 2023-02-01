@@ -61,7 +61,7 @@
             android:layout_marginTop="30sp"
             android:layout_marginBottom="50sp"
             android:backgroundTint="#cfdae4"
-            android:onClick="clickFunction"
+            android:onClick="onClick"
             android:text="ENTER GUESS"
             android:textColor="#0c2a31"
             android:textSize="20sp"

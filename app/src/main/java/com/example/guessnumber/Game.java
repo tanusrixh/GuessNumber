@@ -40,12 +40,12 @@ public class Game extends AppCompatActivity {
         Toast.makeText(Game.this,str, Toast.LENGTH_LONG).show();
     }
 
-    public void clickFunction(View view)
+    public void onClick(View view)
     {
-        int userGuessing;
 
-        EditText variable = findViewById(R.id.editId);
-        userGuessing = Integer.parseInt(variable.getText().toString());
+        EditText userInput = findViewById(R.id.editId);
+        int userGuessing = Integer.parseInt(userInput.getText().toString());
+
         if (userGuessing <= result - 2) {
 
             makeToast("Hint: The number is higher");
@@ -54,10 +54,10 @@ public class Game extends AppCompatActivity {
             makeToast("Hint: The number is lower");
         }
         else if (userGuessing == result +1) {
-            makeToast("Hint: Almost There! Just a little higher");
+            makeToast("Hint: Almost There! Just a little lower");
         }
         else if (userGuessing == result -1) {
-            makeToast("Hint: Almost There! Just a little lower");
+            makeToast("Hint: Almost There! Just a little higher");
         }
         else {
             makeToast("Congratulations!");
