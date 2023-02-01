@@ -7,19 +7,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
-
+public class Instructionfromstart extends AppCompatActivity {
     Button start;
     Button instructions;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_instructionfromstart);
         start = findViewById(R.id.beginGame);
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent startIntent = new Intent(MainActivity.this,Game.class);
+                Intent startIntent = new Intent(Instructionfromstart.this,Game.class);
                 startActivity(startIntent);
             }
         });
@@ -29,11 +28,10 @@ public class MainActivity extends AppCompatActivity {
         instructions.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent instructionIntent = new Intent(MainActivity.this,Instructionfromstart.class);
+                Intent instructionIntent = new Intent(Instructionfromstart.this,MainActivity.class);
                 startActivity(instructionIntent);
             }
         });
     }
-
 
 }
