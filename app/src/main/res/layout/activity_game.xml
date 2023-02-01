@@ -20,6 +20,31 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="25sp"
         />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50sp"
+        android:text="Can you guess what the number between 0 to 10 is?"
+        android:textSize="25sp"
+        android:layout_below="@id/welcome"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/editId"
+        android:layout_width="348dp"
+        android:layout_height="67dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50sp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="ENTER A NUMBER BETWEEN 0 - 10"
+        android:inputType="numberDecimal" />
+
+
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -28,6 +53,19 @@
         android:layout_alignParentBottom="true"
         android:orientation="vertical">
 
+        <Button
+            android:id="@+id/guess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editId"
+            android:layout_marginTop="30sp"
+            android:layout_marginBottom="50sp"
+            android:backgroundTint="#cfdae4"
+            android:onClick="clickFunction"
+            android:text="ENTER GUESS"
+            android:textColor="#0c2a31"
+            android:textSize="20sp"
+            android:textStyle="bold" />
         <Button
             android:id="@+id/instructions"
             android:layout_width="match_parent"
